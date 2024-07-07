@@ -16,7 +16,6 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-opencv-python = "^4.10.0.84"
 flask = "^3.0.3"
 gevent = "^24.2.1"
 

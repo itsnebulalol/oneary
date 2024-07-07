@@ -2,10 +2,8 @@ from argparse import Namespace
 from pathlib import Path
 from pkg_resources import get_distribution
 from os import environ
-from shutil import which, rmtree
+from shutil import rmtree
 from subprocess import getoutput, getstatusoutput
-from typing import Union
-from cv2 import VideoCapture, CAP_PROP_FRAME_HEIGHT
 
 from . import logger
 

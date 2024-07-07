@@ -26,7 +26,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR $PYSETUP_PATH
 COPY oneary ./oneary
-COPY LICENSE README.md main.py pyproject.toml poetry.lock ./
+COPY LICENSE README.md pyproject.toml poetry.lock ./
 
 RUN poetry build --format wheel
 RUN python -m venv env

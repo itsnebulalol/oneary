@@ -1,0 +1,15 @@
+name: oneary
+services:
+  oneary:
+    image: docker.io/itsnebulalol/oneary
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: oneary
+    volumes:
+      - "./config:/app/config"
+    environment:
+      - TZ=America/New_York
+    ports:
+      - 5000:5000
+    restart: unless-stopped
