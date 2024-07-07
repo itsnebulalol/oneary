@@ -7,7 +7,7 @@ class Config:
     def __init__(self):
         # Default configuration
         self.libraries = ["tv", "tv4k", "movies", "movies4k"]
-        self.src_path = "/mnt/library"
+        self.src_path = "/mnt/libraries"
         self.dest_path = "/mnt/library_organized"
         self.bind_address = "127.0.0.1"
         self.port = 5000

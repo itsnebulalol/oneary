@@ -8,6 +8,7 @@ services:
     container_name: oneary
     volumes:
       - "./config:/app/config"
+      - "/mnt:/mnt"
     environment:
       - TZ=America/New_York
     ports:
