@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "oneary"
+version = "1.0.0"
+description = "Merge your multi-format Sonarr/Radarr libraries into one."
+authors = ["Nebula <me@itsnebula.net>"]
+license = "GPLv3"
+readme = "README.md"
+repository = "https://github.com/itsnebulalol/oneary"
+keywords = []
+classifiers = [
+    "Natural Language :: English",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python = "^4.10.0.84"
+flask = "^3.0.3"
+gevent = "^24.2.1"
+
+[tool.poetry.scripts]
+oneary = 'oneary.__main__:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
