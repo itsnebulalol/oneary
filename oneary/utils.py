@@ -15,7 +15,7 @@ def get_data_dir() -> Path:
         Path: Path to data directory
     """
 
-    home_env = environ.get("Oneary_HOME")
+    home_env = environ.get("ONEARY_HOME")
     if home_env:
         return Path(home_env)
 
